@@ -1,0 +1,194 @@
+* {
+  /* font: font-size/line-height*/
+  font: 15px/1.5 Arial, Helvetica, sans-serif, sans-serif;
+  margin: 0;
+}
+
+.newsletter,
+footer,
+nav {
+  display: flex;
+}
+
+.banner h1 {
+  position: relative;
+  animation: heading;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+  0% {
+    padding-top: -50px;
+  }
+
+  100% {
+    padding-top: 200px;
+  }
+}
+
+.container {
+  background-color: rgb(85, 79, 79);
+  min-height: 70%;
+  padding: 40px;
+}
+
+nav {
+  justify-content: end;
+  font-size: larger;
+  font-weight: 600;
+  gap: 45px;
+  padding: 0px 90px;
+  color: white;
+}
+
+nav a {
+  padding-top: 28px;
+  text-decoration: none;
+  color: white;
+}
+
+nav h1 {
+  margin-right: auto;
+}
+
+#home {
+  color: rgb(237, 101, 10);
+}
+
+h1 {
+  font-weight: bolder;
+  font-stretch: expanded;
+  font-size: 3em;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+#css {
+  padding-top: 22px;
+}
+
+#html {
+  padding-top: 15px;
+}
+
+.banner {
+  height: 500px;
+  background-image: url("images/wallpaper.jpg");
+  background-color: black;
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  border-top: 5px solid rgb(237, 101, 10);
+}
+
+.banner h1 {
+  font-size: 4em;
+}
+
+.banner h3 {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.newsletter {
+  background-color: rgb(85, 79, 79);
+  color: white;
+  padding: 30px 30px;
+  font-size: 18px;
+  justify-content: space-around;
+}
+
+.newsletter input,
+button {
+  font-size: 18px;
+  padding: 8px 46px;
+}
+
+button {
+  background-color: rgb(237, 101, 10);
+  color: white;
+}
+
+.logosection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  padding: 3% 11%;
+  gap: 50px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.logosection h2 {
+  font-weight: bolder;
+}
+
+.logosection img {
+  padding: 20px;
+}
+
+.logosection p {
+  font-size: large;
+  font-weight: 450;
+}
+
+footer {
+  justify-content: center;
+  background-color: rgb(237, 101, 10);
+  padding: 35px 0px;
+  font-size: large;
+  font-weight: 600;
+  font-stretch: expanded;
+  color: white;
+  letter-spacing: 3px;
+}
+
+nav a:hover {
+  font-size: larger;
+  text-decoration: underline;
+}
+
+button:hover {
+  font-size: 17px;
+}
+
+.newsletter input:hover {
+  background-color: lightgray;
+}
+
+.newsletter button:active {
+  background-color: green;
+}
+
+@media all and (max-width: 950px) {
+  nav,
+  .newsletter {
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .newsletter input,
+  button {
+    font-size: medium;
+    padding: 10px;
+  }
+
+  .logosection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,120 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+footer,
+nav {
+  display: flex;
+}
+
+.container {
+  background-color: rgb(85, 79, 79);
+  padding: 40px 40px;
+}
+
+#card {
+  color: rgb(237, 101, 10);
+}
+
+nav {
+  justify-content: end;
+  font-size: larger;
+  font-weight: 600;
+  gap: 45px;
+  padding: 0px 90px;
+  color: white;
+}
+
+nav a {
+  padding-top: 28px;
+  text-decoration: none;
+  color: white;
+}
+
+nav h1 {
+  margin-right: auto;
+  font-weight: bolder;
+  font-stretch: expanded;
+  font-size: 3em;
+  padding: 0px 80px;
+}
+
+.buisnesscard{
+  height:635px;
+  background-image: url("images/7.png");
+  background-repeat: no-repeat;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.898);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.buisnesscard img{
+  width: 500px;
+  padding: 30px 200px 30px 200px;  
+  animation:movement;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+footer {
+  justify-content: center;
+  background-color: rgb(237, 101, 10);
+  padding: 35px 0px;
+  font-size: large;
+  font-weight: 600;
+  font-stretch: expanded;
+  color: white;
+  letter-spacing: 3px;
+}
+
+nav a:hover {
+  font-size: larger;
+  text-decoration: underline;
+}
+
+button:hover {
+  font-size: 17px;
+}
+
+@media all and (max-width: 950px) {
+    nav{
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+
+@keyframes movement {
+  0%{
+    padding-top:30px;
+    padding-left:200px;
+  }
+  25%{
+    padding-top:30px;
+    padding-left:1000px;
+  }
+  50%{
+    padding-top:250px;
+    padding-left:1000px;
+  }
+  75%{
+    padding-top:250px;
+    padding-left:200px;
+  }
+  100%{
+    padding-top:30px;
+    padding-left:200px;
+  }
+}

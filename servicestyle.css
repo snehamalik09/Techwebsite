@@ -1,0 +1,169 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.newsletter,
+footer,
+nav,
+.container1 {
+  display: flex;
+}
+
+.container {
+  background-color: rgb(85, 79, 79);
+  padding: 40px 40px;
+}
+
+#services {
+  color: rgb(237, 101, 10);
+}
+
+nav {
+  justify-content: end;
+  font-size: larger;
+  font-weight: 600;
+  gap: 45px;
+  padding: 0px 90px;
+  color: white;
+}
+
+nav a {
+  padding-top: 28px;
+  text-decoration: none;
+  color: white;
+}
+
+nav h1 {
+  margin-right: auto;
+}
+
+h1 {
+  font-weight: bolder;
+  font-stretch: expanded;
+  font-size: 3em;
+  padding: 0px 80px;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.newsletter {
+  background-color: rgb(85, 79, 79);
+  color: white;
+  padding: 40px 40px;
+  font-size: 18px;
+  justify-content: space-around;
+  border-top: 5px solid rgb(237, 101, 10);
+}
+
+.newsletter input,
+button {
+  font-size: 18px;
+  padding: 8px 46px;
+}
+
+button {
+  background-color: rgb(237, 101, 10);
+  color: white;
+  margin: 5px 2px;
+}
+
+.container1 {
+  flex-wrap: wrap;
+  padding: 2% 8%;
+  margin: 10px;
+}
+
+.container1 div {
+  background-color: lightgray;
+  margin: 5px 65px;
+  line-height: 2em;
+  width: 50vw;
+  padding: 40px 40px;
+  font-size: larger;
+}
+
+#serviceheading {
+  padding-top: 5%;
+  padding-left: 12%;
+  font-size: xx-large;
+}
+
+.quote {
+  font-size: larger;
+  color: white;
+  background-color: rgb(85, 79, 79);
+  padding: 50px 20px;
+}
+
+.quote input {
+  color: white;
+}
+
+footer {
+  justify-content: center;
+  background-color: rgb(237, 101, 10);
+  padding: 35px 0px;
+  font-size: large;
+  font-weight: 600;
+  font-stretch: expanded;
+  color: white;
+  letter-spacing: 3px;
+}
+
+nav a:hover {
+  font-size: larger;
+  text-decoration: underline;
+}
+
+button:hover {
+  font-size: 17px;
+}
+
+.newsletter input:hover {
+  background-color: lightgray;
+}
+
+.quote input:hover,
+textarea:hover {
+  background-color: lightgrey;
+}
+
+.newsletter button:active {
+  background-color: green;
+}
+
+@media all and (max-width: 950px) {
+    nav,
+  .newsletter ,.container1{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav,
+  .newsletter {
+    padding: 40px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .newsletter input,
+  button {
+    font-size: medium;
+    padding: 10px;
+  }
+
+  .container1{
+      margin:10px;
+  }
+
+}

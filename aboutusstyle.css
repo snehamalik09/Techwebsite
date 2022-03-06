@@ -1,0 +1,141 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.newsletter,
+footer,
+nav {
+  display: flex;
+}
+
+.container {
+  background-color: rgb(85, 79, 79);
+  padding: 40px 40px;
+}
+
+nav {
+  justify-content: end;
+  font-size: larger;
+  font-weight: 600;
+  gap: 45px;
+  padding: 0px 90px;
+  color: white;
+}
+
+#about {
+  color: rgb(237, 101, 10);
+}
+
+nav a {
+  padding-top: 28px;
+  text-decoration: none;
+  color: white;
+}
+
+nav h1 {
+  margin-right: auto;
+}
+
+h1 {
+  font-weight: bolder;
+  font-stretch: expanded;
+  font-size: 3em;
+  padding: 0px 80px;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.newsletter {
+  background-color: rgb(85, 79, 79);
+  color: white;
+  padding: 40px 40px;
+  font-size: 18px;
+  justify-content: space-around;
+  border-top: 5px solid rgb(237, 101, 10);
+}
+
+.newsletter input,
+button {
+  font-size: 18px;
+  padding: 8px 46px;
+}
+
+button {
+  background-color: rgb(237, 101, 10);
+  color: white;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 2% 8%;
+  column-gap: 8%;
+  font-size: large;
+  line-height: 1.5em;
+}
+
+#section2,
+#section3 {
+  padding: 30px 30px;
+  background-color: rgb(85, 79, 79);
+  color: white;
+}
+
+#section1 {
+  font-weight: 450;
+}
+
+footer {
+  justify-content: center;
+  background-color: rgb(237, 101, 10);
+  padding: 35px 0px;
+  font-size: large;
+  font-weight: 600;
+  font-stretch: expanded;
+  color: white;
+  letter-spacing: 3px;
+}
+
+nav a:hover {
+  font-size: larger;
+  text-decoration: underline;
+}
+
+button:hover {
+  font-size: 17px;
+}
+
+.newsletter input:hover {
+  background-color: lightgray;
+}
+
+.newsletter button:active {
+  background-color: green;
+}
+
+@media all and (max-width: 950px) {
+  nav,
+  .newsletter {
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .newsletter input,
+  button {
+    font-size: medium;
+    padding: 10px;
+  }
+}
